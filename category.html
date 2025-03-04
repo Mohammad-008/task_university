@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: flex-start; 
+            align-items: flex-start; 
+            height: 100vh;
+        }
+
+        .products-wrapper {
+            display: flex;
+            flex-direction: row; 
+            gap: 15px; 
+            flex-wrap: wrap; 
+            padding: 10px;
+            width: 100%;
+        }
+
+        .product-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgb(199, 197, 197);
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(253, 225, 225, 0.84);
+            min-width: 200px; 
+        }
+
+        .product-container img {
+            width: 80px;
+            border-radius: 5px;
+        }
+
+        .product-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-name {
+            font-size: 16px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .product-action {
+            color: #444;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="products-wrapper">
+        <div class="product-container">
+            <img src="images/1.jpg" alt="product">
+            <div class="product-details">
+                <span class="product-name">Taxi</span>
+                <span class="product-action">Get taxi</span>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <img src="images/1.jpg" alt="product">
+            <div class="product-details">
+                <span class="product-name">Taxi</span>
+                <span class="product-action">Get taxi</span>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <img src="images/1.jpg" alt="product">
+            <div class="product-details">
+                <span class="product-name">Taxi</span>
+                <span class="product-action">Get taxi</span>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <img src="images/1.jpg" alt="product">
+            <div class="product-details">
+                <span class="product-name">Taxi</span>
+                <span class="product-action">Get taxi</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
