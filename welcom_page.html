@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>welcom-page</title>
+    <title>Welcome Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,8 +18,20 @@
             margin: 0;
         }
 
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            max-width: 80%;
+        }
+
+        .text-content {
+            flex: 1;
+        }
+
         h1 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             color: #333;
             margin-bottom: 10px;
         }
@@ -30,32 +42,38 @@
             margin-bottom: 20px;
         }
 
-        button {
-            background-color: #3897f0;
+        .btn-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-color: #4d5154;
             color: white;
             border: none;
             padding: 12px 20px;
             border-radius: 5px;
             cursor: pointer;
-            margin: 10px;
             font-size: 1rem;
             transition: 0.3s;
-        }
-
-        button a {
             text-decoration: none;
-            color: white;
-            display: block;
+            display: inline-block;
         }
 
-        button:hover {
-            background-color: #2673c6;
+        .btn:hover {
+            background-color: #021325;
         }
 
-        img {
+        .image-container {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-container img {
             width: 300px;
             height: auto;
-            margin-top: 20px;
             border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
@@ -63,11 +81,19 @@
 </head>
 
 <body>
-    <h1>Welcom to the page</h1>
-    <p>you can reach your goals here!!!!!</p>
-    <button><a href="login.com"> creat account here </a> </button>
-    <button><a href="login.com" style="float: right;"> request a demo </a></button>
-    <img src="./images_test.png" alt="عکس خوش امد گویی">
+    <div class="container">
+        <div class="text-content">
+            <h1>Welcome to the Page</h1>
+            <p>You can reach your goals here!</p>
+            <div class="btn-group">
+                <a href="login.com" class="btn"> you dont have any account just Create one</a>
+                <a href="login.com" class="btn">Request a Demo</a>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="./images_test.png" alt="Welcome Image">
+        </div>
+    </div>
 </body>
 
 </html>
